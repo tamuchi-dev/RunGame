@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="Debug.cpp">
+      <Filter>01.Framework\03.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>01.Framework\02.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>01.Framework\02.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>01.Framework\02.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleColider.cpp">
+      <Filter>01.Framework\02.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphLoader.cpp">
+      <Filter>01.Framework\01.CoreSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameRate.cpp">
+      <Filter>01.Framework\01.CoreSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>01.Framework\01.CoreSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>01.Framework\01.CoreSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>04.Scene\01.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>04.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="StageScene.cpp">
+      <Filter>04.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneDirector.cpp">
+      <Filter>04.Scene\02.Director</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectDirector.cpp">
+      <Filter>03.Object\01.Director</Filter>
+    </ClCompile>
+    <ClCompile Include="NinjaFrog.cpp">
+      <Filter>03.Object\02.Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Obstacle.cpp">
+      <Filter>03.Object\03.Obstacle\01.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GroundSpike.cpp">
+      <Filter>03.Object\03.Obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="RotarySaw.cpp">
+      <Filter>03.Object\03.Obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="SpikeBall.cpp">
+      <Filter>03.Object\03.Obstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="GrassGround.cpp">
+      <Filter>03.Object\05.Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="SunnyDome.cpp">
+      <Filter>03.Object\06.Skydome</Filter>
+    </ClCompile>
+    <ClCompile Include="Skydome.cpp">
+      <Filter>03.Object\06.Skydome\01.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="NightDome.cpp">
+      <Filter>03.Object\06.Skydome</Filter>
+    </ClCompile>
+    <ClCompile Include="SkydomeManager.cpp">
+      <Filter>03.Object\06.Skydome\02.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ObstacleManager.cpp">
+      <Filter>03.Object\03.Obstacle\02.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>01.Framework\02.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGenerator.cpp">
+      <Filter>05.Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="GoldCoin.cpp">
+      <Filter>03.Object\04.Coin</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin.cpp">
+      <Filter>03.Object\04.Coin\01.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="SilverCoin.cpp">
+      <Filter>03.Object\04.Coin</Filter>
+    </ClCompile>
+    <ClCompile Include="RedCoin.cpp">
+      <Filter>03.Object\04.Coin</Filter>
+    </ClCompile>
+    <ClCompile Include="CoinManager.cpp">
+      <Filter>03.Object\04.Coin\02.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>03.Object\07.UI\01.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDirector.cpp">
+      <Filter>02.GameDirector</Filter>
+    </ClCompile>
+    <ClCompile Include="Countdown.cpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeLimit.cpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CharaIcon.cpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PleaseLeftClick.cpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleLogo.cpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Score.cpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelUp.cpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CloudDome.cpp">
+      <Filter>03.Object\06.Skydome</Filter>
+    </ClCompile>
+    <ClCompile Include="CIrcleFade.cpp">
+      <Filter>04.Scene\03.Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScene.cpp">
+      <Filter>04.Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="01.Framework">
+      <UniqueIdentifier>{b7c8462c-7d99-4706-abe3-1a130d5187ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Framework\01.CoreSystem">
+      <UniqueIdentifier>{40ad21d3-638c-481d-8b88-169e278abb66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Framework\02.Utility">
+      <UniqueIdentifier>{fd6b3a5c-7116-4d77-b605-0f78ed2ae054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Framework\03.Common">
+      <UniqueIdentifier>{5ce66e40-4639-41d2-8ed8-736b81ae461d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object">
+      <UniqueIdentifier>{b3c9f6ee-ed23-47e2-9a84-6c60e394093b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\01.Director">
+      <UniqueIdentifier>{34a78940-6b96-4cdf-8526-46ba38986c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\02.Player">
+      <UniqueIdentifier>{42bdfaa5-5775-4062-bc70-11abdfe7458c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\03.Obstacle">
+      <UniqueIdentifier>{13dd3c40-3e08-4460-b1c3-35f513c495a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\03.Obstacle\01.Base">
+      <UniqueIdentifier>{16bd5667-4d6b-4388-84ba-e5e2e9d29463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\03.Obstacle\02.Manager">
+      <UniqueIdentifier>{3325a837-ae3b-445d-8c6a-9bae873770b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\05.Ground">
+      <UniqueIdentifier>{95a8c85a-3e33-437b-ad9d-d9619a1dd6b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\06.Skydome">
+      <UniqueIdentifier>{b5bddfbd-ea6a-41cc-b576-4b096541dbc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\06.Skydome\01.Base">
+      <UniqueIdentifier>{ad698c23-8a75-4a40-b4f6-7b89d9a4b4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\06.Skydome\02.Manager">
+      <UniqueIdentifier>{1a563bbd-4654-4583-8c8a-da64cb32a66e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\04.Coin">
+      <UniqueIdentifier>{24bb7695-f309-4052-b8aa-e1d9fc631523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\04.Coin\01.Base">
+      <UniqueIdentifier>{4662edf3-789c-4199-9a52-49cf0b4543e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\04.Coin\02.Manager">
+      <UniqueIdentifier>{a3e7b1d0-710c-4534-a1b1-a61e21cd0bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\07.UI">
+      <UniqueIdentifier>{26afff91-7d6d-493d-ac44-36465cf4d6f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Scene">
+      <UniqueIdentifier>{4bebf807-650a-4619-8a9e-4f7842c5dfb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Scene\01.Base">
+      <UniqueIdentifier>{ddcb2d18-3f7d-450f-b878-ef7479211245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Scene\02.Director">
+      <UniqueIdentifier>{86a981e7-3a73-46d7-8c13-f81f10f1764e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Tool">
+      <UniqueIdentifier>{f51899a2-b486-4315-bfe1-3a863f9f7234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameDirector">
+      <UniqueIdentifier>{79ad3245-9e70-4da4-b619-152fb4c1486c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Object\07.UI\01.Manager">
+      <UniqueIdentifier>{772ddf2f-0302-45c2-9bbf-a5173fa967cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Scene\03.Effect">
+      <UniqueIdentifier>{28478ee6-face-47ea-a37b-76538804bdbe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseTypes.hpp">
+      <Filter>01.Framework\03.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.hpp">
+      <Filter>01.Framework\03.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.hpp">
+      <Filter>01.Framework\02.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework.hpp">
+      <Filter>01.Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.hpp">
+      <Filter>01.Framework\02.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.hpp">
+      <Filter>01.Framework\02.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleColider.hpp">
+      <Filter>01.Framework\02.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphLoader.hpp">
+      <Filter>01.Framework\01.CoreSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameRate.hpp">
+      <Filter>01.Framework\01.CoreSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.hpp">
+      <Filter>01.Framework\01.CoreSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.hpp">
+      <Filter>01.Framework\01.CoreSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.hpp">
+      <Filter>04.Scene\01.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.hpp">
+      <Filter>04.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="StageScene.hpp">
+      <Filter>04.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDirector.hpp">
+      <Filter>04.Scene\02.Director</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectDirector.hpp">
+      <Filter>03.Object\01.Director</Filter>
+    </ClInclude>
+    <ClInclude Include="NinjaFrog.hpp">
+      <Filter>03.Object\02.Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Obstacle.hpp">
+      <Filter>03.Object\03.Obstacle\01.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GroundSpike.hpp">
+      <Filter>03.Object\03.Obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="RotarySaw.hpp">
+      <Filter>03.Object\03.Obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="SpikeBall.hpp">
+      <Filter>03.Object\03.Obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="GrassGround.hpp">
+      <Filter>03.Object\05.Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="SunnyDome.hpp">
+      <Filter>03.Object\06.Skydome</Filter>
+    </ClInclude>
+    <ClInclude Include="Skydome.hpp">
+      <Filter>03.Object\06.Skydome\01.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NightDome.hpp">
+      <Filter>03.Object\06.Skydome</Filter>
+    </ClInclude>
+    <ClInclude Include="SkydomeManager.hpp">
+      <Filter>03.Object\06.Skydome\02.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ObstacleManager.hpp">
+      <Filter>03.Object\03.Obstacle\02.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.hpp">
+      <Filter>01.Framework\02.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="TestGenerator.hpp">
+      <Filter>05.Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="GoldCoin.hpp">
+      <Filter>03.Object\04.Coin</Filter>
+    </ClInclude>
+    <ClInclude Include="Coin.hpp">
+      <Filter>03.Object\04.Coin\01.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="SilverCoin.hpp">
+      <Filter>03.Object\04.Coin</Filter>
+    </ClInclude>
+    <ClInclude Include="RedCoin.hpp">
+      <Filter>03.Object\04.Coin</Filter>
+    </ClInclude>
+    <ClInclude Include="CoinManager.hpp">
+      <Filter>03.Object\04.Coin\02.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.hpp">
+      <Filter>03.Object\07.UI\01.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDirector.hpp">
+      <Filter>02.GameDirector</Filter>
+    </ClInclude>
+    <ClInclude Include="Countdown.hpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeLimit.hpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CharaIcon.hpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PleaseLeftClick.hpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleLogo.hpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Score.hpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelUp.hpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CloudDome.hpp">
+      <Filter>03.Object\06.Skydome</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleFade.hpp">
+      <Filter>04.Scene\03.Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultScene.hpp">
+      <Filter>04.Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
