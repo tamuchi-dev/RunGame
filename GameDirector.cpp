@@ -43,6 +43,10 @@ namespace Game
 
     void GameDirector::Update() noexcept
     {
+        if (CheckHitKey(KEY_INPUT_SPACE))
+        {
+            nowEvent = Event::GameClear;
+        }
         Stage();
         if (nowTimeLimit == 70 || nowTimeLimit == 30)
         {
