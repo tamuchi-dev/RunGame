@@ -1,3 +1,4 @@
+#include <DxLib.h>
 #include "Framework.hpp"
 #include "ObjectDirector.hpp"
 #include "SceneDirector.hpp"
@@ -9,6 +10,7 @@ namespace Game
         ObjectDirector::GetInstance().GetPlayer()->Initialize();
         ObjectDirector::GetInstance().GetUIManager()->GetUI<PleaseLeftClick>()->Initialize();
         ObjectDirector::GetInstance().GetSkydomeManager()->ChangeSkydome<SunnyDome>();
+        SceneDirector::GetInstance().ChangeBGM(SceneDirector::TitleBGM);
     }
 
     bool TitleScene::IsExitGame() const noexcept

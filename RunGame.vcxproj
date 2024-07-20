@@ -160,6 +160,7 @@
     <ClCompile Include="Obstacle.cpp" />
     <ClCompile Include="ObstacleManager.cpp" />
     <ClCompile Include="PleaseLeftClick.cpp" />
+    <ClCompile Include="Ranking.cpp" />
     <ClCompile Include="ResultScene.cpp" />
     <ClCompile Include="Score.cpp" />
     <ClCompile Include="TestGenerator.cpp" />
@@ -209,6 +210,7 @@
     <ClInclude Include="Obstacle.hpp" />
     <ClInclude Include="ObstacleManager.hpp" />
     <ClInclude Include="PleaseLeftClick.hpp" />
+    <ClInclude Include="Ranking.hpp" />
     <ClInclude Include="ResultScene.hpp" />
     <ClInclude Include="Score.hpp" />
     <ClInclude Include="TestGenerator.hpp" />

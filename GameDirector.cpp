@@ -1,3 +1,4 @@
+#include "SceneDirector.hpp"
 #include "GameDirector.hpp"
 #include "ObjectDirector.hpp"
 #include <DxLib.h>
@@ -22,13 +23,18 @@ namespace Game
         wave = 363;
         time = 0;
         wave = 0;
+        iscount = false;
 
         blackSprite.Add(GraphLoader::LoadSprite("Asset/Sprite/Black.png"));
+        getSE = LoadSoundMem("Asset/Sound/cursorMove.mp3");
+        setSEFlg = true;
         blackSprite.scale = 30;
         dir = 1;
         state = -1;
         alpha = 0;
         flg = 0;
+
+        scrollOffsetX = 0;
     }
 
     void GameDirector::Render()
@@ -103,7 +109,12 @@ namespace Game
             if (elapsedDelta >= 1)
             {
                 elapsedDelta = 0;
+                iscount = true;
                 --nowTimeLimit;
+            }
+            else
+            {
+                iscount = false;
             }
 
             // 20秒ごとにレベルアップ
@@ -130,6 +141,7 @@ namespace Game
                 /* 当たったらゲームオーバーイベントを発生させる */
                 if (CircleColider::IsCollision(player->GetColider(), obstacle->GetColider()))
                 {
+                    SceneDirector::GetInstance().StopBGM();
                     nowEvent = Event::GameOver;
                 }
             }
@@ -152,6 +164,7 @@ namespace Game
                 if (coin->GetState() == Coin::State::Active && CircleColider::IsCollision(player->GetColider(), coin->GetColider()))
                 {
                     coin->GetCoin();
+                    PlaySoundMem(getSE, DX_PLAYTYPE_BACK);
                 }
 
                 /* 獲得演出が終了したらコインを獲得する */
@@ -3527,6 +3540,16 @@ namespace Game
             coin->Generate<SilverCoin>(750);
             coin->Generate<SilverCoin>(800);
             coin->Generate<SilverCoin>(850);
+        }
+    }
+
+    void GameDirector::Scroll() noexcept
+    {
+        scrollOffsetX -= 2000 * FrameRate::GetDeltaTime();
+
+        if (scrollOffsetX < -1500)
+        {
+            scrollOffsetX = -1500;
         }
     }
 }

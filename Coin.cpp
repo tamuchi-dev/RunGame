@@ -1,3 +1,4 @@
+#include <DxLib.h>
 #include "ObjectDirector.hpp"
 #include "Coin.hpp"
 

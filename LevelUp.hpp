@@ -31,6 +31,8 @@ namespace Game
         /* 現在の状態 */
         State nowState;
 
+        int SE;
+
     public:
 
         [[nodiscard]]

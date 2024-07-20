@@ -10,9 +10,12 @@ namespace Game
 
         /* スコアの画像 */
         Sprite scoreSprite;
+        Sprite scoreSprite2;
 
         /* コインアイコンの画像 */
         Sprite coinIconSprite;
+
+        Sprite coinSp;
 
         /* フレームの配置座標 */
         Vector framePos;

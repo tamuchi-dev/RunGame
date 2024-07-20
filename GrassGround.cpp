@@ -3,11 +3,11 @@
 namespace Game
 {
     GrassGround::GrassGround() noexcept
-    : length{ 11 }
+    : length{ 26 }
     , scrollSpeed{ 600 }
-    , outScreenX{ -2300 }
+    , outScreenX{ -5600 }
     , renderOffset{ 220, 0 }
-    , pushBackX{ 2030 }
+    , pushBackX{ 2500 }
     {
         sprite.Add(GraphLoader::LoadSprite("Asset/Sprite/GrassGround.png"));
 

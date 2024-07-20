@@ -49,6 +49,11 @@ namespace Game
         
         bool isDead;
 
+        int dieSE;
+        bool dieSEFlg;
+        int jumpSE;
+        bool jumpSEFlg;
+
         float64 deadInterval;
 
     public:

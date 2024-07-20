@@ -1,10 +1,12 @@
-﻿#include "LevelUp.hpp"
+﻿#include <DxLib.h>
+#include "LevelUp.hpp"
 
 namespace Game
 {
     LevelUp::LevelUp() noexcept
     {
         sprite.Add(GraphLoader::LoadSprite("Asset/Sprite/LevelUp.png"));
+        SE = LoadSoundMem("Asset/Sound/levelup.mp3");
 
         Initialize();
     }
@@ -50,6 +52,7 @@ namespace Game
         if (nowState == State::Inactive)
         {
             Initialize();
+            PlaySoundMem(SE, DX_PLAYTYPE_BACK);
 
             nowState = State::Active;
         }

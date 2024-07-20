@@ -1,3 +1,4 @@
+#include <DxLib.h>
 #include "Framework.hpp"
 #include "GameDirector.hpp"
 #include "ObjectDirector.hpp"
@@ -16,6 +17,7 @@ namespace Game
         ObjectDirector::GetInstance().GetUIManager()->GetUI<TimeLimit>()->Initialize();
         ObjectDirector::GetInstance().GetUIManager()->GetUI<Score>()->Initialize();
         ObjectDirector::GetInstance().GetUIManager()->GetUI<LevelUp>()->Initialize();
+        SceneDirector::GetInstance().StopBGM();
 
         nowState = State::Coutdown;
     }
@@ -62,6 +64,7 @@ namespace Game
                     if (ObjectDirector::GetInstance().GetUIManager()->GetUI<Countdown>()->isEndCount())
                     {
                         nowState = State::NowGame;
+                        SceneDirector::GetInstance().ChangeBGM(SceneDirector::StageBGM);
                     }
 
                     ObjectDirector::GetInstance().GetSkydomeManager()->Update();
@@ -78,6 +81,7 @@ namespace Game
                     ObjectDirector::GetInstance().GetObstacleManager()->Update();
                     ObjectDirector::GetInstance().GetCoinManager()->Update();
                     ObjectDirector::GetInstance().GetUIManager()->GetUI<LevelUp>()->Update();
+                    ObjectDirector::GetInstance().GetUIManager()->GetUI<TimeLimit>()->Update();
                     break;
 
                 default:

@@ -49,8 +49,11 @@ INT WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ INT)
 
         FrameRate::Update();
         Input::Update();
-        SceneDirector::GetInstance().Update();
-        SceneDirector::GetInstance().Render();
+        if (GetASyncLoadNum() == 0)
+        {
+            SceneDirector::GetInstance().Update();
+            SceneDirector::GetInstance().Render();
+        }
         FrameRate::VSync();
     }
 

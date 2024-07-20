@@ -8,6 +8,7 @@
 #include "CharaIcon.hpp"
 #include "Score.hpp"
 #include "LevelUp.hpp"
+#include "Ranking.hpp"
 
 namespace Game
 {
@@ -21,7 +22,8 @@ namespace Game
             std::unique_ptr<TimeLimit>,
             std::unique_ptr<CharaIcon>,
             std::unique_ptr<Score>,
-            std::unique_ptr<LevelUp>> container;
+            std::unique_ptr<LevelUp>,
+            std::unique_ptr<Ranking>> container;
 
     public:
 

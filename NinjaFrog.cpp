@@ -1,3 +1,4 @@
+#include <DxLib.h>
 #include "NinjaFrog.hpp"
 
 namespace Game
@@ -41,6 +42,9 @@ namespace Game
         idleSprite.Add(GraphLoader::LoadSprite("Asset/Sprite/NinjaFrog/Idle/10.png"));
         idleSprite.Add(GraphLoader::LoadSprite("Asset/Sprite/NinjaFrog/Idle/11.png"));
 
+        dieSE = LoadSoundMem("Asset/Sound/prick.mp3");
+        jumpSE = LoadSoundMem("Asset/Sound/jump3.mp3");
+
         Initialize();
     }
 
@@ -69,6 +73,8 @@ namespace Game
         jumpCount = 0;
 
         isDead = false;
+        dieSEFlg = true;
+        jumpSEFlg = true;
 
         deadInterval = 0.8;
     }
@@ -80,6 +86,7 @@ namespace Game
         {
             ++jumpCount;
             vectorY = jumpForce;
+            PlaySoundMem(jumpSE, DX_PLAYTYPE_BACK);
         }
 
         if (jumpCount > 0)
@@ -137,6 +144,12 @@ namespace Game
     void NinjaFrog::Dead() noexcept
     {
         isDead = true;
+
+        if (dieSEFlg)
+        {
+            dieSEFlg = false;
+            PlaySoundMem(dieSE, DX_PLAYTYPE_BACK);
+        }
 
         deadAnim.PlayOnes(deadSprite);
 

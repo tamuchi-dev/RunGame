@@ -45,12 +45,13 @@ namespace Game
 	public:
 
 		[[nodiscard]]
-		constexpr Coin() noexcept
-		: outScreenX{ -30 }
-		, moveSpeed{ 600 }
-		, colider{ position, 20 }
-		, acquisitionScore{ 0 }
-		, nowState{ State::Inactive } {}
+        constexpr Coin() noexcept
+            : outScreenX{ -30 }
+            , moveSpeed{ 600 }
+            , colider{ position, 20 }
+            , acquisitionScore{ 0 }
+            , nowState{ State::Inactive } {}
+
 
 		virtual ~Coin() noexcept = default;
 

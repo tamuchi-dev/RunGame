@@ -11,5 +11,6 @@ namespace Game
         std::get<std::unique_ptr<CharaIcon>>(container)       = std::make_unique<CharaIcon>();
         std::get<std::unique_ptr<Score>>(container)           = std::make_unique<Score>();
         std::get<std::unique_ptr<LevelUp>>(container)         = std::make_unique<LevelUp>();
+        std::get<std::unique_ptr<Ranking>>(container)         = std::make_unique<Ranking>();
     }
 }

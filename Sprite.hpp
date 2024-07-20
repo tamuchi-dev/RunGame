@@ -37,5 +37,11 @@ namespace Game
         {
             return static_cast<int32>(handles.size());
         }
+
+        [[nodiscard]]
+        constexpr int32 GetHandle() const noexcept
+        {
+            return handles[0];
+        }
     };
 }

@@ -14,7 +14,16 @@ namespace Game
 
         std::unique_ptr<CircleFade> fade;
 
+        int BGM[4] = { 0 };
+
     public:
+        enum
+        {
+            TitleBGM,
+            StageBGM,
+            ClearBGM,
+            OverBGM,
+        };
 
         /* ‹N“®€”õ */
         void Startup() noexcept;
@@ -28,6 +37,10 @@ namespace Game
 
         /* •`‰æˆ— */
         void Render() const noexcept;
+
+        void ChangeBGM(int id);
+
+        void StopBGM();
 
         /* ƒV[ƒ“‚ğØ‚è‘Ö‚¦‚é */
         template <class SceneType>

@@ -22,6 +22,8 @@ namespace Game
         /* ‰Šú‰»ˆ— */
         void Initialize() noexcept;
 
+        void Update() noexcept;
+
         /* •`‰æˆ— */
         void Render() const noexcept;
     };

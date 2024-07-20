@@ -134,6 +134,9 @@
     <ClCompile Include="ResultScene.cpp">
       <Filter>04.Scene</Filter>
     </ClCompile>
+    <ClCompile Include="Ranking.cpp">
+      <Filter>03.Object\07.UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="01.Framework">
@@ -350,6 +353,9 @@
     </ClInclude>
     <ClInclude Include="ResultScene.hpp">
       <Filter>04.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Ranking.hpp">
+      <Filter>03.Object\07.UI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

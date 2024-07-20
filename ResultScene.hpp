@@ -12,6 +12,17 @@ namespace Game
 
         Sprite gameClearW;
 
+        Sprite confettiSp;
+        int timer;
+
+        struct Confetti
+        {
+            int interval;
+            int index;
+            Vector pos;
+            bool isVisible;
+        } confetti[100] = { 0 };
+
         bool first;
 
         float gameOverY;
@@ -27,6 +38,9 @@ namespace Game
         float gameClearWX;
         
         int gameClearEffFrame;
+
+        bool isShowRanking;
+        bool isPress;
 
     public:
 

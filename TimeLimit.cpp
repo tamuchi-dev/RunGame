@@ -24,6 +24,12 @@ namespace Game
         position = Vector{ 960, 200 };
 
         carryOffsetX = 100;
+
+        sprite.scale = 1;
+    }
+
+    void TimeLimit::Update() noexcept
+    {
     }
 
     void TimeLimit::Render() const noexcept
